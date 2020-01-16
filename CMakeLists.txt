@@ -1,0 +1,5 @@
+project("test" CXX)
+add_library("a" SHARED "src/liba.cpp")
+add_library("b" SHARED "src/libb.cpp")
+add_executable("test" "src/main.cpp")
+target_link_libraries("test" "a" "b")
