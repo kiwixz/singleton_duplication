@@ -1,6 +1,6 @@
 # singleton_duplication
 
-A proper Linux toolchain will give you the unsurpising result:
+A proper Linux toolchain will give you the unsurprising result:
 ```
 Singleton()
 [94174823866848] 'unset' => 'before main'
