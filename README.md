@@ -24,6 +24,18 @@ Singleton()
 ~Singleton()
 ```
 
+Interestingly, adding DLL import/export logic does not duplicate the singleton into the main program:
+```
+Singleton()
+[140732515234624] 'unset' => 'before main'
+[140732515234624] 'before main' => 'lib a'
+Singleton()
+[140732393075520] 'unset' => 'lib b'
+[140732515234624] 'lib a' => 'after main'
+~Singleton()
+~Singleton()
+```
+
 
 #
 

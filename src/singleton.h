@@ -3,7 +3,14 @@
 #include <iostream>
 #include <string>
 
-struct Singleton
+struct
+#ifdef DLL_IMPORT
+__declspec(dllimport)
+#endif
+#ifdef DLL_EXPORT
+__declspec(dllexport)
+#endif
+Singleton
 {
     static Singleton &get()
     {
