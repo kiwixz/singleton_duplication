@@ -24,7 +24,7 @@ Singleton()
 ~Singleton()
 ```
 
-Interestingly, adding DLL import/export logic does not duplicate the singleton into the main program:
+Interestingly, adding DLL import/export logic on Windows remove the duplication in the main program:
 ```
 Singleton()
 [140732515234624] 'unset' => 'before main'
