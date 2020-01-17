@@ -1,4 +1,4 @@
-# singleton_shared_lib
+# singleton_duplication
 
 A proper Linux toolchain will give you the unsurpising result:
 ```
